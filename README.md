@@ -51,7 +51,7 @@ class HtmlErrorHandleStrategy implements ErrorHandleStrategy
 ```
 
 
-```
+```php
 
 namespace Neon;
 
