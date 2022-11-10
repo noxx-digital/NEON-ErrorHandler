@@ -15,7 +15,7 @@ namespace Neon;
 
 use Throwable;
 
-class HtmlErrorHandleStrategy implements ErrorHandleStrategy
+class PlainErrorHandleStrategy implements ErrorHandleStrategy
 {
     /*
      *
@@ -48,13 +48,12 @@ class HtmlErrorHandleStrategy implements ErrorHandleStrategy
 }
 ```
 
-
 ```php
 namespace Neon;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-ErrorHandler::set_handle_strategy( new HtmlErrorHandleStrategy() );
+ErrorHandler::set_handle_strategy( new PlainErrorHandleStrategy() );
 
 trigger_error( 'TEST', E_USER_ERROR );
 ```
