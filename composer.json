@@ -1,0 +1,17 @@
+{
+    "name": "noxx/neon-error-handler",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Neon\\Error\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Noxx",
+            "email": "dev@noxx.digital"
+        }
+    ],
+    "require": {}
+}
