@@ -9,7 +9,6 @@ composer require noxx/neon-error-handler
 ## Usage
 
 ```php
-
 <?php
 
 namespace Neon;
@@ -47,12 +46,10 @@ class HtmlErrorHandleStrategy implements ErrorHandleStrategy
         header('Content-Type: text/plain' );
     }
 }
-
 ```
 
 
 ```php
-
 namespace Neon;
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -60,5 +57,4 @@ require __DIR__ . '/../vendor/autoload.php';
 ErrorHandler::set_handle_strategy( new HtmlErrorHandleStrategy() );
 
 trigger_error( 'TEST', E_USER_ERROR );
-
 ```
