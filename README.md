@@ -1,7 +1,7 @@
 # NEON-ErrorHandler
 
 Error handler that takes `set_error_handler`, `set_exception_handler` `register_shutdown_function` callbacks from a 
-strategy design pattern. So it can be exchanged at runtime.
+strategy design pattern. So it can be changed at runtime.
 
 ```
 composer require noxx/neon-error-handler
